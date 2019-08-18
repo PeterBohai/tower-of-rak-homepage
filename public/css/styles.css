@@ -1,0 +1,144 @@
+.title {
+	font-family: "FutureTimeSplitters";
+	color: red;
+}
+
+.banner {
+	background-image: url("/images/landscape.png");
+	background-size: cover;
+	background-repeat: repeat-x;
+	background-position: center center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	padding: 6rem 12rem 30rem 12rem;
+	margin-bottom: 0;
+	border-radius: 0;
+	height: 60rem;
+}
+
+.download-prompt {
+	margin-top: 9rem;
+	display: inline-block;
+}
+
+.download-text {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #15182c;
+	border-color: #15182c;
+	white-space: pre;
+}
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open>.dropdown-toggle.btn-dark, .btn-dark:active:focus{
+    color: #15182c;
+    background-color: #fff;
+    border-color: #15182c; /*set the color you want here*/
+}
+
+.content {
+	background: linear-gradient(#3b4f61, #15182c);
+	height: 50rem;
+	padding: 5rem 18rem 10rem 18rem;
+	color: #c2cfda;
+	font-family: 'Roboto', sans-serif;
+}
+
+.about-header {
+	line-height: 1.7;
+	font-size: 1.8rem;
+	font-weight: 500;
+	text-align: left;
+}
+
+.about {
+	margin-top: 2rem;
+	line-height: 1.7;
+	font-size: 1.3rem;
+	font-weight: 300;
+	text-align: left;
+}
+
+@font-face {
+	font-family: 'FutureTimeSplitters';
+	src: url("/fonts/Future_TimeSplitters.otf") format("opentype");
+}
+
+@media (max-width: 1000px) {
+	.banner {
+		height: 55rem;
+	}
+	.content {
+		height: 45rem;
+		padding: 4rem 6rem 10rem 6rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.download-prompt {
+		margin-top: 8rem;
+	}
+	
+	.download-text {
+		font-size: 1.1rem;
+	}
+
+	.banner {
+		height: 50rem;
+		padding: 7rem 3rem 10rem 3rem;
+	}
+
+	.content {
+		height: 40rem;
+		padding: 3rem 4rem 10rem 4rem;
+	}
+
+	.about-header {
+		line-height: 1.6;
+		font-size: 1.5rem;
+	}
+	
+	.about {
+		line-height: 1.6;
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	legend {
+	  font-size: calc(1.275rem + 0.3vw);
+	}
+	h1,
+	.h1 {
+	  font-size: calc(1.375rem + 1.5vw);
+	}
+	h2,
+	.h2 {
+	  font-size: calc(1.325rem + 0.9vw);
+	}
+	h3,
+	.h3 {
+	  font-size: calc(1.3rem + 0.6vw);
+	}
+	h4,
+	.h4 {
+	  font-size: calc(1.275rem + 0.3vw);
+	}
+	.display-1 {
+	  font-size: calc(1.725rem + 5.7vw);
+	}
+	.display-2 {
+	  font-size: calc(1.675rem + 5.1vw);
+	}
+	.display-3 {
+	  font-size: calc(1.575rem + 3.9vw);
+	}
+	.display-4 {
+	  font-size: calc(1.475rem + 2.7vw);
+	}
+	.close {
+	  font-size: calc(1.275rem + 0.3vw);
+	}
+  }

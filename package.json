@@ -1,0 +1,14 @@
+{
+  "name": "tor-game-site",
+  "version": "1.0.0",
+  "description": "A webpage for the game Tower of Rak",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Hu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
