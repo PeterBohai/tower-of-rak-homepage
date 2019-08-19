@@ -4,35 +4,43 @@
 <head>
 	<meta charset="UTF-8">
 
-	<!-- css stylesheets -->
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/styles.css">
-	
+
 	<!-- fontawesome icons -->
 	<script src="https://kit.fontawesome.com/aab2084dd9.js"></script>
 
+	<!-- ekko-lightbox CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:500&display=swap"
+		rel="stylesheet">
 
+	<link rel="stylesheet" href="css/styles.css">
 	<title>TOR</title>
-
-
 
 </head>
 
 <body>
-	<div class="jumbotron banner text-center">
+	<div class="jumbotron text-center banner">
 		<h1 class="display-1 title">Tower of Rak</h1>
 		<div class="download-prompt">
-			<p class="download-text">EARLY DEMO NOW AVALIABLE</p>
-			<button type="button" class="btn btn-dark btn-lg btn-block"><i class="fab fa-apple fa-md"></i>   Download for macOS</button>
+			<p class="download-text">EARLY DEMO AVALIABLE NOW</p>
+			<form action="/" method="POST">
+				<button type="submit" class="btn btn-dark btn-lg btn-block"><i class="fab fa-apple fa-md"></i> Download for macOS</button>
+			</form>
+			
 		</div>
-		
+
 	</div>
 
 	<div class="content">
+
+		<img class="player-gif" src="images/player.gif">
+
 		<p class="about-header">
 			A turned-based roguelike game inspired by Tales of Maj'Eyal and the webtoon Tower of
 			God.
@@ -40,7 +48,8 @@
 
 		<div class="row">
 			<div class="col-sm about">
-				In a world of two opposing races, a young Gator hero sets out to conquer the ancient Tower of Rak, which is said to hold a legendary relic with immense powers.
+				In a world of two opposing races, a young Gator hero sets out to conquer the ancient Tower of Rak, which
+				is said to hold a legendary relic with immense powers.
 			</div>
 			<div class="col-sm about">
 				The hero seeks to free the Gators from the supression of the overwhelmingly dominant Teurtal race.
@@ -49,6 +58,55 @@
 
 	</div>
 
+	<div class="bottom-half">
+		<div class="showcase container-fluid text-center">
+			<h2>Gameplay</h2>
+			<div class="row justify-content-center">
+				<a href="images/screenshot1.png" data-toggle="lightbox" data-gallery="gallery" class="lightbox col-md-6">
+					<img src="images/screenshot1.png" class="img-fluid screenshots">
+				</a>
+				<a href="images/screenshot2.png" data-toggle="lightbox" data-gallery="gallery" class="lightbox col-md-6">
+					<img src="images/screenshot2.png" class="img-fluid screenshots">
+				</a>
+			</div>
+
+			<div class="download-prompt">
+				<p class="download-text">EARLY DEMO AVALIABLE NOW</p>
+				<form action="/" method="POST">
+					<button type="submit" class="btn btn-dark btn-lg btn-block"><i class="fab fa-apple fa-md"></i> Download for macOS</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="contact container-fluid text-center">
+			<a href="https://github.com/PeterBohai/tower-of-rak"><i class="fab fa-github fa-3x"></i></a>
+			<p>Want to help develop? Found a few nasty bugs? Contact me on GitHub!</p>
+		
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="footer-content">
+			<p>Peter Hu © 2019</p>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
+
+	<!-- ekko-lighbox JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+	
+	<script src="index.js" type="text/javascript" charset="UTF-8"></script>
 </body>
 
 </html>

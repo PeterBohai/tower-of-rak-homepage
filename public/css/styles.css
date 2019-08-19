@@ -3,6 +3,45 @@
 	color: red;
 }
 
+h2 {
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 8rem;
+}
+
+h2:before,
+h2:after {
+	background-color: #3b4f61;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+}
+
+h2:before {
+	right: 0.5em;
+	margin-left: -50%;
+}
+
+h2:after {
+	left: 0.5em;
+	margin-right: -50%;
+}
+
+.fa-github {
+	color: white;
+	margin-bottom: 1rem;
+}
+.fa-github:hover {
+	color: #3f72af;
+}
+
+.player-gif {
+	float: right;
+}
+
 .banner {
 	background-image: url("/images/landscape.png");
 	background-size: cover;
@@ -17,13 +56,14 @@
 }
 
 .download-prompt {
+	font-family: 'Montserrat', sans-serif;
 	margin-top: 9rem;
 	display: inline-block;
 }
 
 .download-text {
 	font-size: 1.5rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1.3rem;
 }
 
 .btn-dark {
@@ -35,18 +75,19 @@
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open>.dropdown-toggle.btn-dark, .btn-dark:active:focus{
     color: #15182c;
     background-color: #fff;
-    border-color: #15182c; /*set the color you want here*/
+    border-color: #15182c; 
 }
 
 .content {
 	background: linear-gradient(#3b4f61, #15182c);
-	height: 50rem;
+	height: 45rem;
 	padding: 5rem 18rem 10rem 18rem;
 	color: #c2cfda;
 	font-family: 'Roboto', sans-serif;
 }
 
 .about-header {
+	clear: right;
 	line-height: 1.7;
 	font-size: 1.8rem;
 	font-weight: 500;
@@ -61,6 +102,53 @@
 	text-align: left;
 }
 
+.bottom-half {
+	background: linear-gradient(#15182c, #3b4f61);
+	padding: 5rem;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+}
+
+.showcase {
+	color: #c2cfda;
+	padding: 0;
+}
+
+.screenshots {
+	border: 2px solid #c2cfda;
+	border-radius: 4px;
+}
+
+.modal-body {
+	padding: 0.3rem;
+}
+
+.contact {
+	margin-top: 8rem;
+	color: #c2cfda;
+	padding: 0;
+}
+
+.footer {
+	display: flex;
+	background: #15182c;
+	height: 2.5rem;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.footer-content {
+	display: inline-block;
+	color: #c2cfda;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 0.9rem;
+}
+.footer-content p {
+	margin: 0;
+}
+
 @font-face {
 	font-family: 'FutureTimeSplitters';
 	src: url("/fonts/Future_TimeSplitters.otf") format("opentype");
@@ -71,12 +159,17 @@
 		height: 55rem;
 	}
 	.content {
-		height: 45rem;
 		padding: 4rem 6rem 10rem 6rem;
+	}
+	.bottom-half {
+		padding: 4rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 }
 
 @media (max-width: 800px) {
+
 	.download-prompt {
 		margin-top: 8rem;
 	}
@@ -103,6 +196,10 @@
 	.about {
 		line-height: 1.6;
 		font-size: 1.1rem;
+	}
+
+	a.lightbox {
+		margin: 1rem;
 	}
 }
 
