@@ -1,18 +1,18 @@
 {
-  "name": "tor-game-site",
-  "version": "1.0.0",
-  "description": "A webpage for the game Tower of Rak",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
-  "author": "Peter Hu",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "engines": {
-    "node": "16.x",
-    "npm": "8.x"
-  }
+    "name": "tor-game-site",
+    "version": "1.0.0",
+    "description": "A webpage for the game Tower of Rak",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Peter Hu",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "engines": {
+        "node": "16.x",
+        "npm": "8.x"
+    }
 }
