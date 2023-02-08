@@ -8,7 +8,7 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
-	res.download(__dirname + "/downloads/Tower-of-Rak.zip");
+	res.download(__dirname + "/downloads/tower-of-rak.zip");
 });
 
 app.listen(process.env.PORT || 3000, function (){
