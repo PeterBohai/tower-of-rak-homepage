@@ -30,12 +30,12 @@ h2:after {
     margin-right: -50%;
 }
 
-.fa-github {
+.social-icon {
     color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
 }
-.fa-github:hover {
-    color: #3f72af;
+.social-icon:hover {
+    color: lightgray;
 }
 
 .player-gif {

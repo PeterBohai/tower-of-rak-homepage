@@ -112,19 +112,33 @@
             </div>
 
             <div class="contact container-fluid text-center">
-                <a href="https://github.com/PeterBohai/tower-of-rak"
-                    ><i class="fab fa-github fa-3x"></i
-                ></a>
-                <p>Want to help develop? Found a few nasty bugs? Contact me on GitHub!</p>
+                <div class="socials row justify-content-md-center">
+                    <div class="col col-lg-1">
+                        <a href="https://github.com/PeterBohai/tower-of-rak" target="_blank"
+                            ><i class="fab fa-github fa-2x social-icon"></i
+                        ></a>
+                    </div>
+                    <div class="col col-lg-1">
+                        <a href="https://www.linkedin.com/in/peterbohai" target="_blank"
+                            ><i class="fab fa-linkedin fa-2x social-icon"></i
+                        ></a>
+                    </div>
+                </div>
+                <p>Want to help develop? Found a few bugs? Contact me on GitHub!</p>
             </div>
         </div>
 
         <div class="footer">
             <div class="footer-content">
-                <p>Peter Hu © 2019</p>
+                <p id="copyright">Peter Hu © 2019 -&nbsp;</p>
             </div>
         </div>
 
+        <script>
+            document
+                .getElementById("copyright")
+                .appendChild(document.createTextNode(new Date().getFullYear()));
+        </script>
         <!-- Bootstrap JS -->
         <script
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
