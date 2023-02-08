@@ -4,14 +4,15 @@
   "description": "A webpage for the game Tower of Rak",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Peter Hu",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "engines": {
-    "node": "12.8.0"
+    "node": "16.x",
+    "npm": "8.x"
   }
 }
