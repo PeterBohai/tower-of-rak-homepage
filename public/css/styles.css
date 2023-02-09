@@ -3,6 +3,11 @@
     color: red;
 }
 
+.header {
+    height: 2rem;
+    background-color: #eef1f4;
+}
+
 h2 {
     overflow: hidden;
     text-align: center;
@@ -54,10 +59,10 @@ h2:after {
     background-image: url("/images/landscape.png");
     background-size: cover;
     background-repeat: repeat-x;
-    background-position: center center;
+    background-position: top;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    padding: 2rem 6rem 20rem 6rem;
+    padding: 0rem 6rem 15rem 6rem;
     margin-bottom: 0;
     border-radius: 0;
 }
@@ -117,7 +122,7 @@ h2:after {
 
 .content {
     background: linear-gradient(#3b4f61, #15182c);
-    padding: 5rem 18rem 10rem 18rem;
+    padding: 0rem 18rem 10rem 18rem;
     color: #c2cfda;
     font-family: "Roboto", sans-serif;
 }
@@ -198,6 +203,15 @@ h2:after {
     }
 }
 
+@media (min-width: 1400px) {
+    .banner {
+        background-size: contain;
+    }
+    .content {
+        padding-top: 7rem;
+    }
+}
+
 @media (max-width: 1200px) {
     legend {
         font-size: calc(1.275rem + 0.3vw);
@@ -237,7 +251,7 @@ h2:after {
 
 @media (max-width: 1000px) {
     .banner {
-        padding-bottom: 25rem;
+        padding-bottom: 15rem;
     }
     .content {
         padding: 4rem 3rem 10rem 3rem;
@@ -266,7 +280,7 @@ h2:after {
     }
 
     .banner {
-        padding: 3rem 2rem 25rem 2rem;
+        padding: 0rem 2rem 15rem 2rem;
     }
 
     .display-1 {
