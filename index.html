@@ -12,7 +12,7 @@
         />
 
         <!-- fontawesome icons -->
-        <script src="https://kit.fontawesome.com/aab2084dd9.js"></script>
+        <script src="https://kit.fontawesome.com/aab2084dd9.js" crossorigin="anonymous"></script>
 
         <!-- ekko-lightbox CSS -->
         <link
@@ -39,6 +39,14 @@
 
     <body>
         <div class="jumbotron text-center banner">
+            <div style="height: 6rem">
+                <a
+                    href="https://github.com/PeterBohai/tower-of-rak"
+                    target="_blank"
+                    style="float: right"
+                    ><i class="fa-brands fa-github fa-2x top-icon"></i
+                ></a>
+            </div>
             <h1 class="display-1 title">Tower of Rak</h1>
             <div class="download-prompt">
                 <p class="download-text">EARLY DEMO AVAILABLE NOW</p>
@@ -48,7 +56,7 @@
                         class="btn btn-outline-dark btn-lg btn-block"
                         onclick="this.blur();"
                     >
-                        <i class="fab fa-apple fa-md"></i> Download for macOS
+                        <i class="fa-brands fa-apple fa-md"></i> Download for macOS
                     </button>
                 </form>
             </div>
@@ -105,26 +113,53 @@
                             class="btn btn-outline-dark btn-lg btn-block btn-bottom"
                             onclick="this.blur();"
                         >
-                            <i class="fab fa-apple fa-md"></i> Download for macOS
+                            <i class="fa-brands fa-apple fa-md"></i> Download for macOS
                         </button>
                     </form>
                 </div>
             </div>
 
             <div class="contact container-fluid text-center">
-                <a href="https://github.com/PeterBohai/tower-of-rak"
-                    ><i class="fab fa-github fa-3x"></i
-                ></a>
-                <p>Want to help develop? Found a few nasty bugs? Contact me on GitHub!</p>
+                <p>
+                    Want to help develop? Found a few bugs? <br />
+                    Feel free to reach out below
+                </p>
+                <div class="socials row justify-content-sm-center">
+                    <div class="col col-sm-1">
+                        <a href="https://github.com/PeterBohai/tower-of-rak" target="_blank"
+                            ><i class="fa-brands fa-github fa-2x social-icon"></i
+                        ></a>
+                    </div>
+                    <div class="col col-sm-1">
+                        <a href="https://www.linkedin.com/in/peterbohai" target="_blank"
+                            ><i class="fa-brands fa-linkedin fa-2x social-icon"></i
+                        ></a>
+                    </div>
+                    <div class="col col-sm-1">
+                        <a href="https://www.youtube.com/@PeterBohai" target="_blank"
+                            ><i class="fa-brands fa-youtube fa-2x social-icon"></i
+                        ></a>
+                    </div>
+                    <div class="col col-sm-1">
+                        <a href="https://twitter.com/PeterBohai" target="_blank"
+                            ><i class="fa-brands fa-twitter fa-2x social-icon"></i
+                        ></a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="footer">
             <div class="footer-content">
-                <p>Peter Hu © 2019</p>
+                <p id="copyright">Peter Hu © 2019 -&nbsp;</p>
             </div>
         </div>
 
+        <script>
+            document
+                .getElementById("copyright")
+                .appendChild(document.createTextNode(new Date().getFullYear()));
+        </script>
         <!-- Bootstrap JS -->
         <script
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
