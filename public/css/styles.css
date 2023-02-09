@@ -38,8 +38,16 @@ h2:after {
     color: lightgray;
 }
 
+.top-icon {
+    color: black;
+}
+.top-icon:hover {
+    color: slategray;
+}
+
 .player-gif {
     float: right;
+    margin-bottom: 1rem;
 }
 
 .banner {
@@ -49,15 +57,14 @@ h2:after {
     background-position: center center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    padding: 6rem 6rem 30rem 6rem;
+    padding: 2rem 6rem 20rem 6rem;
     margin-bottom: 0;
     border-radius: 0;
-    height: 60rem;
 }
 
 .download-prompt {
     font-family: "Montserrat", sans-serif;
-    margin-top: 9rem;
+    margin-top: 8rem;
     display: inline-block;
 }
 
@@ -156,6 +163,7 @@ h2:after {
     margin-top: 8rem;
     color: #c2cfda;
     padding: 0;
+    width: 80%;
 }
 
 .footer {
@@ -180,65 +188,6 @@ h2:after {
 @font-face {
     font-family: "FutureTimeSplitters";
     src: url("/fonts/Future_TimeSplitters.otf") format("opentype");
-}
-
-@media (max-width: 1000px) {
-    .banner {
-        height: 55rem;
-    }
-    .content {
-        padding: 4rem 6rem 10rem 6rem;
-    }
-    .bottom-half {
-        padding: 1rem 4rem;
-        padding-top: 10rem;
-    }
-
-    a.lightbox {
-        margin: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .download-prompt {
-        margin-top: 8rem;
-    }
-
-    .download-text {
-        font-size: 1rem;
-    }
-
-    .banner {
-        height: 50rem;
-        padding: 7rem 3rem 10rem 3rem;
-    }
-
-    .content {
-        padding: 3rem 2.5rem 10rem 2.5rem;
-    }
-
-    .about-header {
-        line-height: 1.6;
-        font-size: 1.4rem;
-    }
-
-    .about {
-        line-height: 1.6;
-        font-size: 1.1rem;
-    }
-
-    a.lightbox {
-        margin: 1rem;
-    }
-
-    .bottom-half {
-        padding: 1rem 2rem;
-        padding-top: 10rem;
-    }
-
-    .btn {
-        font-size: 1rem;
-    }
 }
 
 @media (pointer: coarse) {
@@ -283,5 +232,77 @@ h2:after {
     }
     .close {
         font-size: calc(1.275rem + 0.3vw);
+    }
+}
+
+@media (max-width: 1000px) {
+    .banner {
+        padding-bottom: 25rem;
+    }
+    .content {
+        padding: 4rem 3rem 10rem 3rem;
+    }
+    .bottom-half {
+        padding: 1rem 4rem;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+    }
+
+    a.lightbox {
+        margin: 1rem;
+    }
+    .contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-prompt {
+        margin-top: 8rem;
+    }
+
+    .download-text {
+        font-size: 1rem;
+    }
+
+    .banner {
+        padding: 3rem 2rem 25rem 2rem;
+    }
+
+    .display-1 {
+        font-size: calc(2.7rem + 5.7vw);
+    }
+
+    .content {
+        padding: 3rem 1.5rem 10rem 1.5rem;
+    }
+
+    .about-header {
+        line-height: 1.6;
+        font-size: 1.4rem;
+    }
+
+    .about {
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+
+    a.lightbox {
+        margin: 1rem;
+    }
+
+    .bottom-half {
+        padding: 1rem 1rem;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .contact {
+        width: 100%;
+        font-size: 0.9rem;
     }
 }
